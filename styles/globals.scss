@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Padding for navbar and page layout */
+  .space-x {
+    @apply px-md;
+    @apply md:px-10;
+    @apply lg:px-32;
+    @apply xl:px-44;
+  }
+  .space-y {
+    @apply py-md;
+    @apply md:py-md;
+    @apply lg:py-md;
+    @apply xl:py-md;
+  }
+
+  .ghost {
+    @apply inline-flex -mx-xs -my-0.5 px-xs py-0.5;
+    @apply rounded-md;
+    @apply transition-colors;
+  }
+  .ghost:hover {
+    @apply bg-black bg-opacity-10;
+  }
+}
