@@ -21,12 +21,23 @@ const ContentPage = ({ data }: { data: MarkdownPageData }) => {
   const Markdown = getMDXComponent(data.code);
   return (
     <>
-      <article>
-        <h1>{data.frontmatter.title}</h1>
-        <div>
-          <Markdown></Markdown>
-        </div>
+      <div className="text-7xl mb-xs">✏️</div>
+      <h1 className="text-4xl font-extrabold tracking-wide">
+        {data.frontmatter.title}
+      </h1>
+      <article className="prose mt-base">
+        <Markdown></Markdown>
       </article>
+
+      <div className="fixed h-full top-0 right-0 opacity-0 hover:opacity-100 p-base pt-64">
+        <ul>
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+          <li>Four</li>
+          <li>Five</li>
+        </ul>
+      </div>
     </>
   );
 };

@@ -19,7 +19,7 @@ const SmartLink = ({
   const router = useRouter();
   const className = clsx(props.className, {
     underline,
-    [`${activeClassName}`]: router.pathname === href,
+    [`${activeClassName}`]: router.asPath === href,
   });
 
   if (href[0] === "/")

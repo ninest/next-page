@@ -5,10 +5,10 @@
 @layer utilities {
   /* Padding for navbar and page layout */
   .space-x {
-    @apply px-md;
-    @apply md:px-10;
-    @apply lg:px-32;
-    @apply xl:px-44;
+    @apply m-auto px-md;
+    @screen md {
+      @apply px-0 max-w-3xl;
+    }
   }
   .space-y {
     @apply py-md;
@@ -25,4 +25,82 @@
   .ghost:hover {
     @apply bg-black bg-opacity-10;
   }
+}
+
+@layer utilities {
+  .prose {
+    @apply space-y-base leading-8 text-gray-darker;
+
+    p {
+      @apply break-words;
+    }
+
+    ul {
+      @apply list-outside list-disc ml-lg;
+    }
+    ol {
+      @apply list-outside list-decimal ml-lg;
+    }
+
+    a {
+      @apply underline;
+    }
+
+    h2,
+    h3,
+    h4 {
+      @apply text-gray-900;
+      // Extra spacing above and below headings
+      @apply pt-0.5 pb-0.5;
+    }
+
+    h2 {
+      @apply text-3xl font-semibold;
+    }
+    h3 {
+      @apply text-2xl font-medium;
+    }
+    h4 {
+      @apply text-xl font-medium;
+    }
+  }
+}
+
+/* Colors */
+:root {
+  /* Light theme brand */
+  --indigo-50: #eef2ff;
+  --indigo-100: #e0e7ff;
+  --indigo-200: #c7d2fe;
+  --indigo-300: #a5b4fc;
+  --indigo-400: #818cf8;
+  --indigo-500: #6366f1;
+  --indigo-600: #4f46e5;
+  --indigo-700: #4338ca;
+  --indigo-800: #3730a3;
+  --indigo-900: #312e81;
+
+  /* Light theme grays */
+  --gray-50: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
+
+  /* Light theme errors */
+  --red-300: #fca5a5;
+  --red-400: #f87171;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --red-700: #b91c1c;
+
+  /* Light warnings */
+  --orange-300: #fcd34d;
+  --orange-500: #f59e0b;
+  --orange-700: #b45309;
 }

@@ -4,6 +4,7 @@ import path from "path";
 const root = process.cwd();
 
 export function readFile(filepath: string) {
+  console.log(filepath)
   if (fileExists(filepath)) {
     return fs.readFileSync(path.join(root, "content", `${filepath}`), "utf8");
   } else {
