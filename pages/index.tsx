@@ -1,23 +1,34 @@
+import Icon from "../components/Icon";
 import type { NextPage } from "next";
+import Title from "../components/typography/Title";
+import Spacer from "../components/Space";
+import Space from "../components/Space";
 
 const IndexPage: NextPage = () => {
   return (
     <>
-      <div className="text-7xl mb-xs">📉</div>
-      <h1 className="text-4xl font-extrabold tracking-wide">First Page</h1>
-      <article className="prose mt-base">
-        <p>
-          This is a website for storing information and content for your choice!
-          Here are some features:
-        </p>
+      <div className="wrapper">
+        <Space size="xl"></Space>
+        <Icon>📉</Icon>
+        <Spacer size="md"></Spacer>
 
-        <ul>
-          <li>Easy to use</li>
-          <li>Easy to customize</li>
-          <li>Emoji yay!</li>
-          <li>Table of contents: on desktop, hover the mouse to the right</li>
-        </ul>
-      </article>
+        <Title>Welcome to First Page!</Title>
+        <Spacer></Spacer>
+
+        <article className="prose">
+          <p>
+            This is a website for storing information and content for your
+            choice! Here are some features:
+          </p>
+
+          <ul>
+            <li>Easy to use</li>
+            <li>Easy to customize</li>
+            <li>Emoji yay!</li>
+            <li>Table of contents: on desktop, hover the mouse to the right</li>
+          </ul>
+        </article>
+      </div>
     </>
   );
 };

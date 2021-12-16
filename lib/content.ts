@@ -52,5 +52,10 @@ export async function getPostsFromList(
 
 export async function getPost(filepath: string): Promise<MarkdownPageData> {
   const markdownPage: MarkdownPageData = await mdxFromFile(filepath);
-  return markdownPage
+
+  // Must not be empty, but can be empty list
+  markdownPage.frontmatter!.linkedPages =
+    markdownPage.frontmatter?.linkedPages ?? [];
+
+  return markdownPage;
 }

@@ -7,7 +7,8 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Navbar />
-      <main className="space-x space-y">
+      {/* <main className="wrapper"> */}
+      <main>
         <Component {...pageProps} />
       </main>
     </>
