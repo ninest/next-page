@@ -3,11 +3,11 @@ import SmartLink from "./SmartLinks";
 const Navbar = () => {
   return (
     <>
-      <header className="p-base space-x-lg flex justify-between">
+      <header className="sticky top-0 p-md space-x-lg flex justify-between font-display">
         <SmartLink href="/" className="text-lg">
           📉 First Page
         </SmartLink>
-        <nav>
+        <nav className="opacity-40 hover:opacity-100 transition-opacity">
           <ul className="flex space-x-base">
             <li>
               <SmartLink
