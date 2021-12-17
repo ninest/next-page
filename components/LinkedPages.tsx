@@ -1,19 +1,29 @@
 import clsx from "clsx";
-import { Frontmatter, MarkdownPageData } from "../types/content";
-import SmartLink from "./SmartLinks";
+import { Frontmatter } from "../types/content";
+import PagePreview, { PagePreviewProps } from "./PagePreview";
 
 interface LinkedPagesProps {
   pages: Frontmatter["linkedPages"];
+  ghost?: PagePreviewProps["ghost"];
+  size?: PagePreviewProps["size"];
 }
 
-const LinkedPages = ({ pages }: LinkedPagesProps) => {
+const LinkedPages = ({ pages, ghost, size }: LinkedPagesProps) => {
   return (
     <>
-      {pages.map((page) => (
-        <SmartLink className="block" href={page.url}>
-          {page.title} : {page.description}
-        </SmartLink>
-      ))}
+      <div className="space-y-md">
+        {pages.map((page) => (
+          <PagePreview
+            key={page.url}
+            url={page.url}
+            icon={page.icon}
+            title={page.title}
+            description={page.description}
+            ghost={ghost}
+            size={size}
+          ></PagePreview>
+        ))}
+      </div>
     </>
   );
 };

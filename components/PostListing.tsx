@@ -1,28 +1,34 @@
+import clsx from "clsx";
 import Link from "next/link";
 import { formatShortDate } from "../lib/date";
 import { MarkdownPageData } from "../types/content";
 import SmartLink from "./SmartLinks";
 import Spacer from "./Space";
 
-const PostPreview = ({
+const PostListing = ({
   markdownPageData,
+  ghost = false,
 }: {
   markdownPageData: MarkdownPageData;
+  ghost?: boolean;
 }) => {
   const frontmatter = markdownPageData.frontmatter!;
   return (
     <>
       <SmartLink
         href={`/${markdownPageData.categoryCodes[0]}/${markdownPageData.slug}`}
-        className="full-bleed flex items-center rounded-md hover:bg-blue-100 p-sm -m-sm"
+        className={clsx(
+          "full-bleed flex items-center rounded-md hover:bg-primary-lightest",
+          { "p-sm -m-sm": ghost, "p-md": !ghost }
+        )}
       >
         <div className="min-w-[6rem] text-sm font-semibold text-gray">
           {formatShortDate(new Date(frontmatter.lastUpdated))}
         </div>
-        <h3 className="font-semibold">{frontmatter.title}</h3>
+        <h3 className="font-semibold text-gray">{frontmatter.title}</h3>
       </SmartLink>
     </>
   );
 };
 
-export default PostPreview;
+export default PostListing;

@@ -19,7 +19,7 @@ class MyDocument extends Document {
           />
           <link rel="stylesheet" href="/font.css" />
         </Head>
-        <body>
+        <body className="bg-light">
           <Main />
           <NextScript />
         </body>

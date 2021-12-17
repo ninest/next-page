@@ -12,6 +12,8 @@ export interface Frontmatter {
   description: string;
   lastUpdated: string;
 
+  icon: string;
+
   showContents: boolean;
   linkedPages: LinkedPage[];
 }
@@ -28,6 +30,7 @@ export interface MarkdownPageData {
 }
 
 export interface LinkedPage {
+  icon: string;
   url: string;
   title: string;
   description: string;

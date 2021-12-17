@@ -3,12 +3,12 @@ import SmartLink from "./SmartLinks";
 const Navbar = () => {
   return (
     <>
-      <header className="sticky top-0 p-md space-x-lg flex justify-between font-display">
-        <SmartLink href="/" className="text-lg">
+      <header className="sticky top-0 bg-light p-md space-x-lg flex justify-between font-display">
+        <SmartLink href="/" className="text-lg text-gray-dark">
           📉 First Page
         </SmartLink>
         <nav className="opacity-40 hover:opacity-100 transition-opacity">
-          <ul className="flex space-x-base">
+          <ul className="flex space-x-base text-gray">
             <li>
               <SmartLink
                 href="/blog"

@@ -2,13 +2,18 @@
 title: The First Post Of The New Blogging Platform Page
 lastUpdated: 2021-11-13
 description: The first example post of this blog
+
+icon: pencil
+
 linkedPages:
   - url: /blog/s
     title: The S
     description: An introduction to the S
+    icon: pencil
   - url: https://github.com/ninest/
     title: ninest – GitHub
     description: Check me out on GitHub
+    icon: github
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat quam neque dignissimos officiis. Odit nemo expedita a, sit, iste soluta quam praesentium nam dolorum voluptate fuga. Ex, quasi, est fugiat a soluta ullam illo nostrum vero consectetur in vel.
