@@ -19,6 +19,7 @@ import Icon from "../components/Icon";
 import clsx from "clsx";
 import LinkedPages from "../components/LinkedPages";
 import PagePreview from "../components/PagePreview";
+import substitutedComponents from "../components/markdown/substituted";
 
 export const getServerSideProps = async ({
   params,
@@ -141,7 +142,7 @@ const _MarkdownPage = ({
           </div>
         </div>
 
-        <Markdown></Markdown>
+        <Markdown components={substitutedComponents}></Markdown>
       </article>
 
       <Spacer size="xl"></Spacer>

@@ -1,5 +1,7 @@
 import path from "path";
 import { bundleMDX } from "mdx-bundler";
+import remarkCodeMeta from "remark-code-meta";
+
 import { readFile } from "../lib/file";
 
 export function mdxFromString(markdown: string) {}
@@ -32,7 +34,10 @@ export async function mdxFromFile<T>(filepath: string) {
     source,
     xdmOptions(options, frontmatter) {
       // Return xdmOptions: https://github.com/kentcdodds/mdx-bundler#xdmoptions
-      options.remarkPlugins = [...(options.remarkPlugins ?? [])];
+      options.remarkPlugins = [
+        ...(options.remarkPlugins ?? []),
+        remarkCodeMeta,
+      ];
       options.rehypePlugins = [...(options.rehypePlugins ?? [])];
       return options;
     },
@@ -50,5 +55,3 @@ export async function mdxFromFile<T>(filepath: string) {
     frontmatter,
   } as unknown as T;
 }
-
-

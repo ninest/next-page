@@ -30,6 +30,21 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, alias 
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis beatae aliquid fugit veritatis! Placeat asperiores, voluptatem tenetur commodi provident sunt!
 
+```py
+a = 1
+
+for i in range(1, 10):
+  print(a)
+```
+
+And here is the pcode:
+
+```pcode
+let a be 1
+when a > 1
+  display a
+```
+
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, doloribus illum molestias sequi enim corrupti temporibus eos iste quae sed ab natus. Debitis neque quasi quae eaque iusto molestias asperiores alias distinctio velit eius laborum ad accusamus quod cum, sequi fuga. Pariatur provident, doloremque dolores vero quidem reprehenderit ut qui consequuntur et aut ab repudiandae rem nobis laboriosam magni blanditiis eum unde laborum quos placeat nihil. Minus aut sint optio.
 
 ## Yet Another?
