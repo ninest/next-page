@@ -11,11 +11,11 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="z-50 sticky top-0 bg-light opacity-70 p-md space-x-lg flex justify-between font-display">
+      <header className="z-50 sticky top-0 bg-light opacity-80 p-md space-x-lg flex justify-between font-display">
         <SmartLink href="/" className="text-lg text-gray-dark">
           📉 First Page
         </SmartLink>
-        <nav className="opacity-40 hover:opacity-100 transition-opacity">
+        <nav className="">
           <ul className="flex space-x-base text-gray">
             <li>
               <SmartLink

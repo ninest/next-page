@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { HTMLAttributes, MouseEventHandler, ReactNode, useState } from "react";
+import { HTMLAttributes, ReactNode, useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 
 interface ExpandableCodeProps extends HTMLAttributes<HTMLDivElement> {
@@ -7,7 +7,6 @@ interface ExpandableCodeProps extends HTMLAttributes<HTMLDivElement> {
   open: boolean;
   children: ReactNode;
 }
-
 const ExpandableCode = ({
   title,
   open,
@@ -30,7 +29,7 @@ const ExpandableCode = ({
       <summary
         onClick={toggle}
         className={clsx(
-          "ml-md md:ml-0", // If it's full-bleed on mobile, move the title 
+          "ml-md md:ml-0", // If it's full-bleed on mobile, move the title
           // to the right so it's inline with the rest of the code
           "list-none font-mono text-sm bg-gray-800 text-gray-300 px-md py-xs",
           "inline-flex items-center justify-between space-x-base rounded-md"
