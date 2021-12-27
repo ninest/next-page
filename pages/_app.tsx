@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
-import Navbar from "../components/Navbar";
-import Spacer from "../components/Space";
+import Navbar from "@/components/Navbar";
+import Spacer from "@/components/Space";
 
 import "../styles/globals.scss";
 // import "../styles/utilities.scss";

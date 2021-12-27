@@ -1,8 +1,9 @@
-import Icon from "../components/Icon";
 import type { NextPage } from "next";
-import Title from "../components/typography/Title";
-import Spacer from "../components/Space";
-import Space from "../components/Space";
+import Icon from "@/components/Icon";
+import Title from "@/components/typography/Title";
+import Spacer from "@/components/Space";
+import Space from "@/components/Space";
+// import Space from "@/components/Space";
 
 const IndexPage: NextPage = () => {
   return (

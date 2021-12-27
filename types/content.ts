@@ -1,4 +1,4 @@
-import { CategoryCode } from "../lib/content";
+import { CategoryCode } from "@/lib/content";
 
 export interface Category {
   code: CategoryCode;
@@ -28,6 +28,10 @@ export interface MarkdownPageData {
   // "Code" from MDX-bundler for rendering the content
   code?: any;
 }
+export type IncompleteMarkdownPageData = Omit<
+  MarkdownPageData,
+  "code" | "frontmatter"
+>;
 
 export interface LinkedPage {
   icon: string;

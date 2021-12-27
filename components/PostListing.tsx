@@ -1,9 +1,7 @@
 import clsx from "clsx";
-import Link from "next/link";
-import { formatShortDate } from "../lib/date";
-import { MarkdownPageData } from "../types/content";
-import SmartLink from "./SmartLinks";
-import Spacer from "./Space";
+import { formatShortDate } from "@/lib/date";
+import { MarkdownPageData } from "@/types/content";
+import SmartLink from "@/components/SmartLinks";
 
 const PostListing = ({
   markdownPageData,

@@ -1,5 +1,4 @@
-import { url } from "inspector";
-import { Frontmatter, LinkedPage, MarkdownPageData } from "../types/content";
+import { Frontmatter, IncompleteMarkdownPageData, LinkedPage, MarkdownPageData } from "@/types/content";
 import { mdxFromFile } from "./mdx";
 
 /* 
@@ -25,7 +24,7 @@ Receive a list of md page data (from content-map.ts) and add ALL fields
 to each item
 */
 export async function getPostsFromList(
-  incompletePosts: MarkdownPageData[]
+  incompletePosts: IncompleteMarkdownPageData[]
 ): Promise<MarkdownPageData[]> {
   // Contains all incompletePosts, but with all the required fields from
   // the MarkdownPageData interface

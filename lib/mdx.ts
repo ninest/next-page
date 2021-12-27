@@ -2,7 +2,7 @@ import path from "path";
 import { bundleMDX } from "mdx-bundler";
 import remarkCodeMeta from "remark-code-meta";
 
-import { readFile } from "../lib/file";
+import { readFile } from "@/lib/file";
 
 export function mdxFromString(markdown: string) {}
 

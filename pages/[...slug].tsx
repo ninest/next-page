@@ -1,25 +1,25 @@
-import { listToFilepath } from "../lib/file";
+import { listToFilepath } from "@/lib/file";
 import type { GetServerSidePropsContext } from "next";
-import { Category, MarkdownPageData } from "../types/content";
+import { Category, MarkdownPageData } from "@/types/content";
 import { getMDXComponent } from "mdx-bundler/client";
 import {
   CategoryCode,
   categoryCodes,
   getPost,
   getPostsFromList,
-} from "../lib/content";
-import { categories, posts } from "../lib/content-map";
-import PostListing from "../components/PostListing";
-import Title from "../components/typography/Title";
-import Highlight from "../components/Highlight";
-import Contents from "../components/Contents";
-import Spacer from "../components/Space";
-import { formatDate } from "../lib/date";
-import Icon from "../components/Icon";
+} from "@/lib/content";
+import { categories, posts } from "@/lib/content-map";
+import PostListing from "@/components/PostListing";
+import Title from "@/components/typography/Title";
+import Highlight from "@/components/Highlight";
+import Contents from "@/components/Contents";
+import Spacer from "@/components/Space";
+import { formatDate } from "@/lib/date";
+import Icon from "@/components/Icon";
 import clsx from "clsx";
-import LinkedPages from "../components/LinkedPages";
-import PagePreview from "../components/PagePreview";
-import substitutedComponents from "../components/markdown/substituted";
+import LinkedPages from "@/components/LinkedPages";
+import PagePreview from "@/components/PagePreview";
+import substitutedComponents from "@/components/markdown/substituted";
 
 export const getServerSideProps = async ({
   params,

@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { Frontmatter } from "../types/content";
+import { Frontmatter } from "@/types/content";
 import PagePreview, { PagePreviewProps } from "./PagePreview";
 
 interface LinkedPagesProps {

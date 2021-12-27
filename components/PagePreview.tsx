@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { HTMLAttributes } from "react";
-import { formatShortDate } from "../lib/date";
-import { MarkdownPageData } from "../types/content";
+import { formatShortDate } from "@/lib/date";
+import { MarkdownPageData } from "@/types/content";
 import Icon from "./Icon";
 import SmartLink from "./SmartLinks";
 import Spacer from "./Space";

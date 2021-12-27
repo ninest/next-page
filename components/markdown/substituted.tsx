@@ -1,4 +1,4 @@
-import CodeBlock from "../CodeBlock";
+import CodeBlock from "@/components/CodeBlock";
 
 const substitutedComponents = {
   /* Code */
@@ -14,6 +14,6 @@ const substitutedComponents = {
       </div>
     );
   },
-};  
+};
 
 export default substitutedComponents;
