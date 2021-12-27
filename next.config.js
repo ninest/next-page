@@ -1,2 +1,4 @@
 /** @type {import('next').NextConfig} */
-module.exports = {};
+module.exports = {
+  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
+};
