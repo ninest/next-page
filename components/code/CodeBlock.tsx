@@ -26,10 +26,14 @@ const CodeBlock = ({ language, code = "", ...props }: CodeBlockProps) => {
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <pre
-          className={clsx(className, {
-            pcode: isPcode,
-            code: !isPcode,
-          })}
+          className={clsx(
+            "p-md font-mono text-xs overflow-x-auto md:rounded-md",
+            {
+              "bg-gray-200": isPcode,
+              "bg-gray-900": !isPcode,
+            },
+            className
+          )}
           style={style}
         >
           {tokens.map((line, i) => {

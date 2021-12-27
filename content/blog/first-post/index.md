@@ -18,6 +18,17 @@ linkedPages:
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat quam neque dignissimos officiis. Odit nemo expedita a, sit, iste soluta quam praesentium nam dolorum voluptate fuga. Ex, quasi, est fugiat a soluta ullam illo nostrum vero consectetur in vel.
 
+<ExpandableCode title="song.txt" open>
+```py
+a = '1'
+a++ # lmao
+```
+</ExpandableCode>
+
+<Alert title="Hello" open>
+This is just a general thing, okay?
+</Alert>
+
 ## The First
 
 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, alias similique? Officiis labore harum consectetur impedit earum maxime commodi consequatur, minima autem atque voluptas recusandae rerum saepe, asperiores modi illum omnis at nam aperiam optio quasi libero! Suscipit sit placeat ipsa alias eligendi quia tenetur! Porro, similique magnam. Ratione sapiente repellat nemo illum minus eius unde eligendi accusamus impedit aliquid.
@@ -40,9 +51,10 @@ for i in range(1, 10):
 And here is the pcode:
 
 ```pcode
-let a be 1
-when a > 1
-  display a
+a = 1
+
+for i in range(1, 10):
+  print(a)
 ```
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, doloribus illum molestias sequi enim corrupti temporibus eos iste quae sed ab natus. Debitis neque quasi quae eaque iusto molestias asperiores alias distinctio velit eius laborum ad accusamus quod cum, sequi fuga. Pariatur provident, doloremque dolores vero quidem reprehenderit ut qui consequuntur et aut ab repudiandae rem nobis laboriosam magni blanditiis eum unde laborum quos placeat nihil. Minus aut sint optio.

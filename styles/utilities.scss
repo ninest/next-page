@@ -34,12 +34,12 @@
     }
 
     .full-bleed {
-      @apply z-50;
+      @apply z-10;
       grid-column: 1 / 4;
     }
 
     .mobile-full-bleed {
-      @apply z-50;
+      @apply z-20;
       grid-column: 1 / 4;
       @screen md {
         grid-column: 2;

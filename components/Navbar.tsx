@@ -3,7 +3,7 @@ import SmartLink from "./SmartLinks";
 const Navbar = () => {
   return (
     <>
-      <header className="sticky top-0 bg-light p-md space-x-lg flex justify-between font-display">
+      <header className="z-50 sticky top-0 bg-light opacity-70 p-md space-x-lg flex justify-between font-display">
         <SmartLink href="/" className="text-lg text-gray-dark">
           📉 First Page
         </SmartLink>

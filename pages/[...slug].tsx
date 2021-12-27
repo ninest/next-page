@@ -146,19 +146,23 @@ const _MarkdownPage = ({
       </article>
 
       <Spacer size="xl"></Spacer>
-      <hr />
-      <Spacer size="xl"></Spacer>
 
-      <div className="wrapper">
-        <Title level={2}>Related</Title>
+      {frontmatter.linkedPages.length > 0 && (
+        <>
+          <hr />
+          <Spacer size="xl"></Spacer>
+          <div className="wrapper">
+            <Title level={2}>Related</Title>
 
-        <Spacer></Spacer>
-        <LinkedPages
-          ghost
-          size="base"
-          pages={frontmatter.linkedPages}
-        ></LinkedPages>
-      </div>
+            <Spacer></Spacer>
+            <LinkedPages
+              ghost
+              size="base"
+              pages={frontmatter.linkedPages}
+            ></LinkedPages>
+          </div>
+        </>
+      )}
     </>
   );
 };
