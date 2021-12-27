@@ -1,6 +1,14 @@
+import { useTheme } from "next-themes";
+import Icon from "./Icon";
 import SmartLink from "./SmartLinks";
 
 const Navbar = () => {
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
     <>
       <header className="z-50 sticky top-0 bg-light opacity-70 p-md space-x-lg flex justify-between font-display">
@@ -35,6 +43,16 @@ const Navbar = () => {
               >
                 Contact
               </SmartLink>
+            </li>
+
+            <li>
+              <button onClick={toggleTheme}>
+                {theme === "light" ? (
+                  <Icon id="moon" size="sm" />
+                ) : (
+                  <Icon id="sun" size="sm" />
+                )}
+              </button>
             </li>
           </ul>
         </nav>

@@ -33,7 +33,7 @@ const MarkdownPage = ({
 
         {/* <Icon>✏️</Icon> */}
 
-        <Icon id={frontmatter.icon}></Icon>
+        <Icon id={frontmatter.icon} size="lg"></Icon>
         <Spacer></Spacer>
         <Title>{frontmatter.title}</Title>
         <Spacer size="xs"></Spacer>

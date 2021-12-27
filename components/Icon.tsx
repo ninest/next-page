@@ -3,13 +3,16 @@ import { HTMLAttributes } from "react";
 import { IconType } from "react-icons";
 import {
   FaGithub,
+  FaGrinBeam,
+  FaMoon,
   FaPencilAlt,
   FaSearch,
   FaSortNumericUp,
+  FaSun,
 } from "react-icons/fa";
 
 interface IconProps extends HTMLAttributes<HTMLDivElement> {
-  size?: "base" | "md" | "lg";
+  size?: "sm" | "base" | "md" | "lg";
   id?: string;
 }
 
@@ -18,8 +21,9 @@ const Icon = ({ children, size = "base", id, ...props }: IconProps) => {
     "text-gray",
     {
       "text-5xl": size == "lg",
-      "text-2xl": size == "base",
+      "text-2xl": size == "md",
       "text-xl": size == "base",
+      "text-sm": size == "sm",
     },
     props.className
   );
@@ -42,4 +46,7 @@ const iconMap: Record<string, IconType> = {
   search: FaSearch,
   dsc: FaSortNumericUp,
   github: FaGithub,
+  grin: FaGrinBeam,
+  moon: FaMoon,
+  sun: FaSun,
 };

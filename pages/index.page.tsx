@@ -10,7 +10,7 @@ const IndexPage: NextPage = () => {
     <>
       <div className="wrapper">
         <Space size="xl"></Space>
-        <Icon>📉</Icon>
+        <Icon id="grin" size="lg"></Icon>
         <Spacer size="md"></Spacer>
 
         <Title>Welcome to First Page!</Title>
