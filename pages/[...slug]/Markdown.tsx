@@ -9,6 +9,7 @@ import Title from "@/components/typography/Title";
 import { formatDate } from "@/lib/date";
 import { Category, MarkdownPageData } from "@/types/content";
 import { getMDXComponent } from "mdx-bundler/client";
+import { NextSeo } from "next-seo";
 
 const MarkdownPage = ({
   category,
@@ -24,6 +25,7 @@ const MarkdownPage = ({
 
   return (
     <>
+      <NextSeo title={frontmatter.title}></NextSeo>
       <Highlight size="lg" theme="gray" className="wrapper relative">
         <div className="absolute font-black" style={{ fontSize: `10rem` }}>
           <span className="opacity-5">{frontmatter.title.slice(0, 2)}</span>
@@ -87,4 +89,4 @@ const MarkdownPage = ({
     </>
   );
 };
-export default MarkdownPage
+export default MarkdownPage;
